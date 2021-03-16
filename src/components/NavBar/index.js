@@ -9,9 +9,7 @@ import {
     MobileIcon,
     NavMenu,
     NavItem,
-    NavLinks,
-    NavBtn,
-    NavBtnLink
+    NavLinks
 } from './NavbarElements';
 
 
@@ -39,7 +37,7 @@ const Navbar = ({ toggle }) => {
             <IconContext.Provider value={{ color: '#fff' }}>
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
-                        <NavLogo to="/" onClick={toggleHome}>dolla</NavLogo>
+                        <NavLogo to="/" onClick={toggleHome}>Jan Dupont</NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />
                         </MobileIcon>
@@ -47,17 +45,17 @@ const Navbar = ({ toggle }) => {
                             <NavItem>
                                 <NavLinks to="about" 
                                 smooth={true} duration={500} spy={true} exact='true' offset={-80}
-                                >About</NavLinks>
+                                >About Me</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to="discover"
                                 smooth={true} duration={500} spy={true} exact='true' offset={-80}
-                                >Discover</NavLinks>
+                                >Fingerstyle</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to="services"
                                 smooth={true} duration={500} spy={true} exact='true' offset={-80}
-                                >Services</NavLinks>
+                                >Recordings</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to="signup"
@@ -65,11 +63,6 @@ const Navbar = ({ toggle }) => {
                                 >Sign Up</NavLinks>
                             </NavItem>
                         </NavMenu>
-                        <NavBtn>
-                            <NavBtnLink to="/signin"
-                            smooth={true} duration={500} spy={true} exact='true' offset={-80}
-                            >Sign In</NavBtnLink>
-                        </NavBtn>
                     </NavbarContainer>
                 </Nav>
             </IconContext.Provider>

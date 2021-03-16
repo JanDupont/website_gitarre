@@ -27,17 +27,17 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='/video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>Virtual Banking Made Easy</HeroH1>
+                <HeroH1>Jan Dupont - Fingerstyle Guitar</HeroH1>
                 <HeroP>
-                    Sign up for a new accoun today and receive $250 in credit towards your next payment.
+                    Welcome!
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}
+                    <Button to="services" onMouseEnter={onHover} onMouseLeave={onHover}
                         primary="true"
                         dark="true"
                         smooth={true} duration={500} spy={true} exact='true' offset={-80}
                     >
-                        Get startet {hover ? <ArrowForward /> : <ArrowRight />}
+                        My Recordings {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
                 </HeroBtnWrapper>
             </HeroContent>
