@@ -6,11 +6,17 @@ const Services = () => {
     return (
         <ServicesContainer id="services">
             <ServicesH1>My personal song list</ServicesH1>
+            <ServicesH2>List of songs I can play or that I used to play once.<br/><br/></ServicesH2>
             <ServicesWrapper>
                 <ServicesCard href="https://www.instagram.com/p/CMKyyQZh9TO/" target="_blank" rel="noopener noreferrer">
                     <ServicesIcon src={Icon5}/>
                     <ServicesH2>Unravel</ServicesH2>
                     <ServicesP>Tokyo Ghoul</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon5}/>
+                    <ServicesH2>Numb</ServicesH2>
+                    <ServicesP>Linkin Park</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon5}/>
@@ -40,7 +46,7 @@ const Services = () => {
                 <ServicesCard>
                     <ServicesIcon src={Icon5}/>
                     <ServicesH2>Lucid Dreams</ServicesH2>
-                    <ServicesP>Huice WRLD</ServicesP>
+                    <ServicesP>Juice WRLD</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon5}/>
